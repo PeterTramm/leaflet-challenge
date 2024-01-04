@@ -1,11 +1,7 @@
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(d => {
-    console.log(d)
-    
     //Assigning d.features to data
     data = d.features
-
-    console.log(data)
-
+    
     //Create inital map
     var map = L.map('map').setView([37.8, -96], 1);
 
